@@ -47,7 +47,7 @@ Background
 Procedure macros  
 
 (REPEAT TIMES &rest COMMANDS)   
-	"Exposes REPEAT-COUNTER to the contents of the macro. TIMES may be an integer or :FOREVER.""(to   "Defines a new turtle procedure. VARS is a regular lambda list."  
+	"Exposes REPEAT-COUNTER to the contents of the macro. TIMES may be an integer or :FOREVER."  
 (TO NAME VARS &BODY)  
 	"Thin wrapper around DEFUN, VARS accepts a regular lambda list"  
 
