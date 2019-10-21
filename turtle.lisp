@@ -28,7 +28,7 @@
 
 (defun init (&optional (width 600) (height 600) (colour #(#xFFFF #xFFFF #xFFFF #xFFFF)))
   (unless xwindows:*display* (xwindows::init-default-display)) ;FIXME i'm a hack.
-  (setf *surface* (surface:get-surface :width width :height height :depth 32)
+  (setf *surface* (surface:get-surface :width width :height height :depth 32 :override :off)
 	*turtle* (make-turtle :location (cons (floor width 2) (floor height 2)) :angle 0 :pen (make-pen colour) :drawp t))
   (surface:prepare-surface *surface*)
   (surface:map-surface *surface*))
