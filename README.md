@@ -59,6 +59,7 @@ Procedure macros
 	"Exposes REPEAT-COUNTER to the contents of the macro. TIMES may be an integer or :FOREVER."  
 (TO NAME VARS &BODY)  
 	"Thin wrapper around DEFUN, VARS accepts a regular lambda list"  
+
 EXAMPLES  
 
 Making a procedure  
@@ -73,3 +74,6 @@ Using a procedure
     (repeat 10
       (square (* repeat-counter 20))
       (right 36))
+
+Result
+![example 1](https://imgur.com/a/SIaGpVt)
