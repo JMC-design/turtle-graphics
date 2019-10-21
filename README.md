@@ -3,7 +3,8 @@ Turtle graphics for Lisp using xrender.
 
 Commands
 
-Movement 
+Movement
+
 (FORWARD UNITS)
 	"MOVE forward UNITS amount. Draws line if TURTLE-DRAWP is T."
 (BACK UNITS)     
@@ -14,6 +15,7 @@ Movement
 	"Turns to the left by DEGREES."
 
 Pen commands
+
 (PEN-UP)
 	"Removes pen from the surface no further drawing takes place until PEN-DOWN."
 (PEN-DOWN)
@@ -25,6 +27,7 @@ Pen commands
 
 
 Location
+
 (CENTER) 
 	"Resets turtles starting location and heading, leaving surface intact."
 (MOVE-TO X Y)
@@ -35,25 +38,28 @@ Location
 	"Returns the absolute coordinates of turtles location."
 
 Background
+
 (CLEAR)
 	"Clears the surface to background colour. Does not change location or heading."
 (RESET)
 	"Clears surface, recenters turtle and zeros heading."
 
 Procedure macros
+
 (REPEAT TIMES &rest COMMANDS) 
 	"Exposes REPEAT-COUNTER to the contents of the macro. TIMES may be an integer or :FOREVER.""(to   "Defines a new turtle procedure. VARS is a regular lambda list."
 (TO NAME VARS &BODY)
 	"Thin wrapper around DEFUN, VARS accepts a regular lambda list"
 
 Save your creation
+
 (SAVE "filename) "Saves the surface to NAME. Doesn't add .png for you. Get a life"
 
 EXAMPLES
 
 Making a procedure
 
-(to square (size)
-  (repeat 4
-    (forward size)
-	(right 90)))
+    (to square (size)  
+      (repeat 4  
+        (forward size)
+        (right 90)))
