@@ -76,4 +76,4 @@ Using a procedure
       (right 36))
 
 Result
-![example 1](https://imgur.com/a/SIaGpVt)
+[example 1](https://imgur.com/a/SIaGpVt)
