@@ -1,7 +1,16 @@
 # turtle-graphics
 Turtle graphics for Lisp using xrender.
 
-Commands
+Commands  
+
+System  
+
+(INIT)  
+"Sets everything up and displays the drawing window"  
+(SAVE "filename)  
+"Saves the surface to NAME. Doesn't add .png for you. Get a life"  
+(STOP)  
+"Shuts everything down."  
 
 Movement
 
@@ -50,12 +59,6 @@ Procedure macros
 	"Exposes REPEAT-COUNTER to the contents of the macro. TIMES may be an integer or :FOREVER."  
 (TO NAME VARS &BODY)  
 	"Thin wrapper around DEFUN, VARS accepts a regular lambda list"  
-
-Save your creation  
-
-(SAVE "filename)  
-"Saves the surface to NAME. Doesn't add .png for you. Get a life"  
-
 EXAMPLES  
 
 Making a procedure  
@@ -64,3 +67,9 @@ Making a procedure
       (repeat 4  
         (forward size)
         (right 90)))
+
+Using a procedure  
+
+    (repeat 10
+      (square (* repeat-counter 20))
+      (right 36))
