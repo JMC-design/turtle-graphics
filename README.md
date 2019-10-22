@@ -1,6 +1,8 @@
 # turtle-graphics
 Turtle graphics for Lisp using xrender.
 
+Dependencies
+Surface-x11 which depends on Surface, Tag, Xutils, all in my github, and CLX on quicklisp.  
 Commands  
 
 System  
