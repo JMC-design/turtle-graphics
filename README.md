@@ -71,9 +71,10 @@ Making a procedure
 
 Using a procedure  
 
-    (repeat 10
+    (pen-colour #xFF 0 #xFF #xFF)
+    (repeat 14
       (square (* repeat-counter 20))
-      (right 36))
+      (right 37))
 
 Result
-![example 1](https://i.imgur.com/Yi8LqxU.png)
+![example 1](https://i.imgur.com/2x5DoCF.png)
