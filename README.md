@@ -5,7 +5,7 @@ Commands
 
 System  
 
-(INIT)  
+(INIT &optional (WIDTH 600)(HEIGHT 600)(COLOUR #(#xFF #xFF #xFF #xFF))
 "Sets everything up and displays the drawing window"  
 (SAVE "filename)  
 "Saves the surface to NAME. Doesn't add .png for you. Get a life"  
